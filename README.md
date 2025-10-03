@@ -1,4 +1,4 @@
 ```
 FUCK YOU CLOUDFLARE
 ```
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Xaiby1/tamil-cf)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Xaiby1/td-cf)
