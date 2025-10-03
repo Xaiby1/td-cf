@@ -50,9 +50,10 @@ function rewritePlaylist(playlist: string, masterUrl: string): string {
 
 export const handleHlsProxy = async (c: Context) => {
   const b64 = c.req.param('b64');
-  if (!b64) return c.text('Missing param', 400, { 'Access-Control-Allow-Origin': '*' });
+  let base64 = b64.replace(/\.m3u8$/, '');
+  if (!base64) return c.text('Missing param', 400, { 'Access-Control-Allow-Origin': '*' });
 
-  const target = base64UrlDecodeToString(b64);
+  const target = base64UrlDecodeToString(base64);
   if (!target || !/^https?:\/\//i.test(target)) {
     return c.text('Invalid target', 400, { 'Access-Control-Allow-Origin': '*' });
   }
