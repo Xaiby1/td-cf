@@ -277,7 +277,7 @@ export async function extractFlash(id: string): Promise<Source> {
     'User-Agent': userAgent,
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.5',
-    'Referer': 'https://tamildhool.art/',
+    'Referer': 'https://onlinepregnancyinfo.com/',
     'Upgrade-Insecure-Requests': '1',
     'Sec-Fetch-Dest': 'iframe',
     'Sec-Fetch-Mode': 'navigate',
@@ -318,7 +318,7 @@ export async function extractFlash(id: string): Promise<Source> {
         hls = { url: finalUrl, label: 'auto' };
       }
     }
-    if (!hls) throw new Error('DESI-FLASH: HLS source not found after unpacking');
+    if (!hls) throw new Error('TAMIL-FLASH: HLS source not found after unpacking');
     chosenUrl = sanitizeM3u8Url(hls.url);
   }
 
